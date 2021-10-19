@@ -1,0 +1,64 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<link href="css/style1.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text.css'/>
+		<!--//webfonts-->
+</head>
+
+<script>
+
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin"){
+alert ("Login successfully");
+window.open("carte.html"); // Redirecting to other page.
+return false;
+}
+else{
+
+alert("wrong");
+window.open("not.html");
+}
+}
+</script>
+ 
+<body>
+	<div class="main">
+		<form method="post" >
+    		<h1><span>Nappe</span> <lable> Login </lable> </h1>
+  			<div class="inset">
+	  			<p>
+	    		 <label for="email">EMAIL ADDRESS</label>
+   	 			<input type="text" id="username" placeholder="" required/>
+				</p>
+  				<p>
+				    <label for="password">Mot de passe</label>
+				    <input type="password"  id="password" placeholder="" required/>
+  				</p>
+				  <p>
+				    <input type="checkbox" name="remember" id="remember">
+				    <label for="remember">Rester connecté pour 14 jours</label>
+				  </p>
+ 			 </div>
+ 	 
+			  <p class="p-container">
+			    <span><a href="#">Forgot password ?</a></span>
+			    <input type="submit" value="Login" id="submit"  onclick="validate()"/>
+			  </p>
+		</form>
+	</div>  
+			
+</body>
+</html>
